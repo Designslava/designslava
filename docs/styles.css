@@ -613,8 +613,8 @@ h1.hero-title{font-size:clamp(2.35rem,5.7vw,4.9rem);max-width:21ch}
   .res-methods{margin-bottom:0}
 }
 @media (max-width:600px){
-  .carousel{--rx:126px;--ry:80px;--card-w:230px;--card-h:198px;--half:1}
-  .carousel-track{height:330px}
+  .carousel{--rx:126px;--ry:80px;--card-w:230px;--card-h:236px;--half:1}
+  .carousel-track{height:366px}
   .carousel-counter b{font-size:3.4rem}
   .cnav{width:40px;height:40px}
   .cstage{flex:0 0 132px}
