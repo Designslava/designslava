@@ -102,10 +102,12 @@
   slides.forEach((el, i) => el.addEventListener('click', () => { goTo(i); restart(); }));
   document.getElementById('cNext').addEventListener('click', () => { next(); restart(); });
   document.getElementById('cPrev').addEventListener('click', () => { prev(); restart(); });
-  carousel.addEventListener('mouseenter', () => { paused = true; stop(); });
-  carousel.addEventListener('mouseleave', () => { paused = false; start(); });
-  carousel.addEventListener('focusin', () => { paused = true; stop(); });
-  carousel.addEventListener('focusout', e => { if (!carousel.contains(e.relatedTarget)) { paused = false; start(); } });
+  if (window.matchMedia('(hover:hover)').matches){
+    carousel.addEventListener('mouseenter', () => { paused = true; stop(); });
+    carousel.addEventListener('mouseleave', () => { paused = false; start(); });
+    carousel.addEventListener('focusin', () => { paused = true; stop(); });
+    carousel.addEventListener('focusout', e => { if (!carousel.contains(e.relatedTarget)) { paused = false; start(); } });
+  }
   carousel.addEventListener('keydown', e => {
     if (e.key === 'ArrowLeft'){ e.preventDefault(); prev(); }
     if (e.key === 'ArrowRight'){ e.preventDefault(); next(); }
