@@ -362,7 +362,7 @@ h1.hero-title{font-size:clamp(2.35rem,5.7vw,4.9rem);max-width:21ch}
 .portrait .hint{font-size:0.82rem;color:var(--ink-3);max-width:26ch}
 
 .about-mid{display:grid;grid-template-columns:1.3fr .7fr;gap:56px;align-items:start;
-  margin-top:44px;padding-top:30px;border-top:1px solid var(--hairline)}
+  margin-top:44px}
 .about-mid .facts{display:grid;grid-template-columns:repeat(3,1fr)}
 .about-mid .fact{display:flex;align-items:center;gap:7px;font-size:0.86rem;color:var(--ink-2);
   padding-right:16px;border-right:1px solid var(--hairline)}
